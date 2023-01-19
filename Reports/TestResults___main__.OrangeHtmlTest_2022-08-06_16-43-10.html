@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-08-06 16:43:10</p>
+                <p class='attribute'><strong>Duration: </strong>2.26 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 0, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.OrangeHtmlTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_HomePage</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=104.0.5112.79)
+Stacktrace:
+0   chromedriver 2                      0x0000000105810ef9 chromedriver 2 + 4480761
+1   chromedriver 2                      0x000000010579c5d3 chromedriver 2 + 4003283
+2   chromedriver 2                      0x000000010542f338 chromedriver 2 + 410424
+3   chromedriver 2                      0x0000000105428fb5 chromedriver 2 + 384949
+4   chromedriver 2                      0x000000010541ba7d chromedriver 2 + 330365
+5   chromedriver 2                      0x000000010541c8ba chromedriver 2 + 334010
+6   chromedriver 2                      0x000000010541bce7 chromedriver 2 + 330983
+7   chromedriver 2                      0x000000010541b1f7 chromedriver 2 + 328183
+8   chromedriver 2                      0x000000010541a0c6 chromedriver 2 + 323782
+9   chromedriver 2                      0x000000010541a4a2 chromedriver 2 + 324770
+10  chromedriver 2                      0x0000000105430dc2 chromedriver 2 + 417218
+11  chromedriver 2                      0x0000000105495c8f chromedriver 2 + 830607
+12  chromedriver 2                      0x0000000105482a62 chromedriver 2 + 752226
+13  chromedriver 2                      0x00000001054954f1 chromedriver 2 + 828657
+14  chromedriver 2                      0x0000000105482953 chromedriver 2 + 751955
+15  chromedriver 2                      0x0000000105458cd5 chromedriver 2 + 580821
+16  chromedriver 2                      0x0000000105459d25 chromedriver 2 + 584997
+17  chromedriver 2                      0x00000001057e202d chromedriver 2 + 4288557
+18  chromedriver 2                      0x00000001057e71b3 chromedriver 2 + 4309427
+19  chromedriver 2                      0x00000001057ec23f chromedriver 2 + 4330047
+20  chromedriver 2                      0x00000001057e7dfa chromedriver 2 + 4312570
+21  chromedriver 2                      0x00000001057c0fef chromedriver 2 + 4153327
+22  chromedriver 2                      0x0000000105801d78 chromedriver 2 + 4418936
+23  chromedriver 2                      0x0000000105801eff chromedriver 2 + 4419327
+24  chromedriver 2                      0x0000000105818ab5 chromedriver 2 + 4512437
+25  libsystem_pthread.dylib             0x00007ff81c78c4e1 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81c787f6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/vaibhavlutade/PycharmProjects/mnewproject/seleniumpackage/unittesttwo.py", line 13, in test_HomePage
+    self.driver.get("https://staging-cu.reposenergy.com/auth/login")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 442, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=104.0.5112.79)
+Stacktrace:
+0   chromedriver 2                      0x0000000105810ef9 chromedriver 2 + 4480761
+1   chromedriver 2                      0x000000010579c5d3 chromedriver 2 + 4003283
+2   chromedriver 2                      0x000000010542f338 chromedriver 2 + 410424
+3   chromedriver 2                      0x0000000105428fb5 chromedriver 2 + 384949
+4   chromedriver 2                      0x000000010541ba7d chromedriver 2 + 330365
+5   chromedriver 2                      0x000000010541c8ba chromedriver 2 + 334010
+6   chromedriver 2                      0x000000010541bce7 chromedriver 2 + 330983
+7   chromedriver 2                      0x000000010541b1f7 chromedriver 2 + 328183
+8   chromedriver 2                      0x000000010541a0c6 chromedriver 2 + 323782
+9   chromedriver 2                      0x000000010541a4a2 chromedriver 2 + 324770
+10  chromedriver 2                      0x0000000105430dc2 chromedriver 2 + 417218
+11  chromedriver 2                      0x0000000105495c8f chromedriver 2 + 830607
+12  chromedriver 2                      0x0000000105482a62 chromedriver 2 + 752226
+13  chromedriver 2                      0x00000001054954f1 chromedriver 2 + 828657
+14  chromedriver 2                      0x0000000105482953 chromedriver 2 + 751955
+15  chromedriver 2                      0x0000000105458cd5 chromedriver 2 + 580821
+16  chromedriver 2                      0x0000000105459d25 chromedriver 2 + 584997
+17  chromedriver 2                      0x00000001057e202d chromedriver 2 + 4288557
+18  chromedriver 2                      0x00000001057e71b3 chromedriver 2 + 4309427
+19  chromedriver 2                      0x00000001057ec23f chromedriver 2 + 4330047
+20  chromedriver 2                      0x00000001057e7dfa chromedriver 2 + 4312570
+21  chromedriver 2                      0x00000001057c0fef chromedriver 2 + 4153327
+22  chromedriver 2                      0x0000000105801d78 chromedriver 2 + 4418936
+23  chromedriver 2                      0x0000000105801eff chromedriver 2 + 4419327
+24  chromedriver 2                      0x0000000105818ab5 chromedriver 2 + 4512437
+25  libsystem_pthread.dylib             0x00007ff81c78c4e1 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81c787f6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_Login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=104.0.5112.79)
+Stacktrace:
+0   chromedriver 2                      0x0000000105810ef9 chromedriver 2 + 4480761
+1   chromedriver 2                      0x000000010579c5d3 chromedriver 2 + 4003283
+2   chromedriver 2                      0x000000010542f338 chromedriver 2 + 410424
+3   chromedriver 2                      0x0000000105428fb5 chromedriver 2 + 384949
+4   chromedriver 2                      0x000000010541ba7d chromedriver 2 + 330365
+5   chromedriver 2                      0x000000010541c8ba chromedriver 2 + 334010
+6   chromedriver 2                      0x000000010541bce7 chromedriver 2 + 330983
+7   chromedriver 2                      0x000000010541b1f7 chromedriver 2 + 328183
+8   chromedriver 2                      0x000000010541a0c6 chromedriver 2 + 323782
+9   chromedriver 2                      0x000000010541a4a2 chromedriver 2 + 324770
+10  chromedriver 2                      0x0000000105430dc2 chromedriver 2 + 417218
+11  chromedriver 2                      0x0000000105495c8f chromedriver 2 + 830607
+12  chromedriver 2                      0x0000000105482a62 chromedriver 2 + 752226
+13  chromedriver 2                      0x00000001054954f1 chromedriver 2 + 828657
+14  chromedriver 2                      0x0000000105482953 chromedriver 2 + 751955
+15  chromedriver 2                      0x0000000105458cd5 chromedriver 2 + 580821
+16  chromedriver 2                      0x0000000105459d25 chromedriver 2 + 584997
+17  chromedriver 2                      0x00000001057e202d chromedriver 2 + 4288557
+18  chromedriver 2                      0x00000001057e71b3 chromedriver 2 + 4309427
+19  chromedriver 2                      0x00000001057ec23f chromedriver 2 + 4330047
+20  chromedriver 2                      0x00000001057e7dfa chromedriver 2 + 4312570
+21  chromedriver 2                      0x00000001057c0fef chromedriver 2 + 4153327
+22  chromedriver 2                      0x0000000105801d78 chromedriver 2 + 4418936
+23  chromedriver 2                      0x0000000105801eff chromedriver 2 + 4419327
+24  chromedriver 2                      0x0000000105818ab5 chromedriver 2 + 4512437
+25  libsystem_pthread.dylib             0x00007ff81c78c4e1 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81c787f6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/vaibhavlutade/PycharmProjects/mnewproject/seleniumpackage/unittesttwo.py", line 18, in test_Login
+    self.driver.get("https://staging-cu.reposenergy.com/auth/login")
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 442, in get
+    self.execute(Command.GET, {'url': url})
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=104.0.5112.79)
+Stacktrace:
+0   chromedriver 2                      0x0000000105810ef9 chromedriver 2 + 4480761
+1   chromedriver 2                      0x000000010579c5d3 chromedriver 2 + 4003283
+2   chromedriver 2                      0x000000010542f338 chromedriver 2 + 410424
+3   chromedriver 2                      0x0000000105428fb5 chromedriver 2 + 384949
+4   chromedriver 2                      0x000000010541ba7d chromedriver 2 + 330365
+5   chromedriver 2                      0x000000010541c8ba chromedriver 2 + 334010
+6   chromedriver 2                      0x000000010541bce7 chromedriver 2 + 330983
+7   chromedriver 2                      0x000000010541b1f7 chromedriver 2 + 328183
+8   chromedriver 2                      0x000000010541a0c6 chromedriver 2 + 323782
+9   chromedriver 2                      0x000000010541a4a2 chromedriver 2 + 324770
+10  chromedriver 2                      0x0000000105430dc2 chromedriver 2 + 417218
+11  chromedriver 2                      0x0000000105495c8f chromedriver 2 + 830607
+12  chromedriver 2                      0x0000000105482a62 chromedriver 2 + 752226
+13  chromedriver 2                      0x00000001054954f1 chromedriver 2 + 828657
+14  chromedriver 2                      0x0000000105482953 chromedriver 2 + 751955
+15  chromedriver 2                      0x0000000105458cd5 chromedriver 2 + 580821
+16  chromedriver 2                      0x0000000105459d25 chromedriver 2 + 584997
+17  chromedriver 2                      0x00000001057e202d chromedriver 2 + 4288557
+18  chromedriver 2                      0x00000001057e71b3 chromedriver 2 + 4309427
+19  chromedriver 2                      0x00000001057ec23f chromedriver 2 + 4330047
+20  chromedriver 2                      0x00000001057e7dfa chromedriver 2 + 4312570
+21  chromedriver 2                      0x00000001057c0fef chromedriver 2 + 4153327
+22  chromedriver 2                      0x0000000105801d78 chromedriver 2 + 4418936
+23  chromedriver 2                      0x0000000105801eff chromedriver 2 + 4419327
+24  chromedriver 2                      0x0000000105818ab5 chromedriver 2 + 4512437
+25  libsystem_pthread.dylib             0x00007ff81c78c4e1 _pthread_start + 125
+26  libsystem_pthread.dylib             0x00007ff81c787f6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 0, Error: 2 -- Duration: 2.26 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
